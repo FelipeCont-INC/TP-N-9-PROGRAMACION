@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Carga de Resultados</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestión del Mundial de Fútbol</h1>
+        <p>Módulo de Control de Resultados</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="posiciones.html">Posiciones</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Validación de Encuentros</h2>
+            <form onsubmit="validarResultado(event)">
+                
+                <div class="form-group">
+                    <label for="goles-local">Goles de Argentina (Local):</label>
+                    <input type="number" id="goles-local" min="0" required placeholder="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="goles-visitante">Goles de Francia (Visitante):</label>
+                    <input type="number" id="goles-visitante" min="0" required placeholder="0">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="VALIDAR ENCUENTRO">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Laboratorio de Programación - 6° G</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
